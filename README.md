@@ -39,10 +39,12 @@ And navigate to `http://127.0.0.1:8000/balaji2245/`.
 ## Walkthrough
 
 I have deployed the working API on Heroku, you can see use following website to look at its woking:
+
 ```sh
 https://balajibookmanagementapp.herokuapp.com/api/book/
 ```
 The backend dataset which I have used is postgresql deployed on Heroku cloud platform. You can add, read, update or delete any record from the dataset. Below I have given examples for the CRUD operations which you can perform on the dataset.
+
 
 ### Create
 For creating a new Book record, you can either use above mentioned website and add the record as shown in the adjacent screenshot using UI provided or you can as well use an API testing tool like Postman.
@@ -74,77 +76,25 @@ Same thing we can do using Postman or any other API testing tool as well:
 
 ### Update
 
+To update a record in our dataset we can call our API using PUT method as shown below, here I have changed the ISBN number of book named "balaji book".
+
+![7](https://user-images.githubusercontent.com/40818500/141835248-992b75f3-2f47-444a-bd16-7bf98744201e.png)
 
 
+### Delete
 
-
-Before you interact with the application, go to GoCardless Sandbox and set up
-the Redirect URI in the Developer settings. To make it work with this
-application, use the value `http://127.0.0.1:8000/gocardless/confirm/`. This is to
-make sure you are redirected back to your site where the purchase is verified
-after you have made a purchase.
-
-### One-off purchases
-
-The simplest payment type is one-off. By clicking `Make purchase` on the sample
-appliation website, you are taken through the flow in making a single payment.
-
-A real-world example of one-off purchases is buying something in an online store.
-
-### Subscriptions
-
-Subscriptions are fixed periodic payments. Upon clicking `Subscribe` on the sample
-application website, you are taken through the process of registering a subscription
-with a merchant.
-
-An example would be subscribing to a magazine or newspaper. The magazine is
-published once a month and it costs £10, the payment flow sets up an automatic
-transaction transferring £10 monthly to the merchant's account.
-
-### Pre-authorizations
-
-Pre-authorizations are essentially subscriptions, with an added twist that it's
-up to the merchant to request funds from the customer's account, and the
-customer may be billed up to a certain, authorized amount every billing
-period. Upon clicking `Preauthorize` on the sample app website, you are taken
-through the flow of pre-authorizing a variable direct-debit payment.
-
-An example from the real world would be a type of pay-as-you go service where
-the customer authorizes the merchant to claim up to a certain amount per interval
-depending on usage.
-
-In the sample app, you pre-authorize a payment of up to £100 every 3 months.
-
-For further information, refer to the [docs](https://sandbox.gocardless.com/docs/connect_guide#payment-types).
-
-## Webhooks
-
-Set up `localtunnel` to test out Webhooks. The `localtunnel` package should be
-installed as a dependency to the project.
-Note, however, that the port number is the same as the port that `python manage.py runserver` is
-running on, which is 8000.
+We can delete a record from the dataset by by calling the API as follows, for example here I've tried deleting the book record with id 1 by calling 
 ```sh
-(env)$ localtunnel-beta 8000
-=> Port 8000 is now publicly accessible from http://5bebd69e5222.v2.localtunnel.com ...
+https://balajibookmanagementapp.herokuapp.com/api/book/1/
 ```
-Please refer to the [the Webhooks manual](https://sandbox.gocardless.com/docs/python/merchant_tutorial_webhook#receiving-webhooks) for more details.
+we get an option to delete it as shown in the screenshot below:
 
-### Test your Webhooks
-Once you have the app running with `python manage.py runserver` and tunneling
-set up with `localtunnel` (make sure you verify that by navigating to the URL
-that `localtunnel` gives back to you) navigate to the "Web hooks" tab under the
-Developer section in GoCardless Sandbox. Make sure that the Webhook URL is the
-same you got back from `localtunnel` with an added `/gocardless/webhook/` at the
-end, i.e `http://5bebd69e5222.v2.localtunnel.com/gocardless/webhook/`,
-otherwise it does not work.  There should be a button for sending a test
-webhook. Click that, select `Bill` as the object type and click `Fire webhook`.
+![8_1](https://user-images.githubusercontent.com/40818500/141837803-f5f0f7b7-c51f-439d-9ee5-e36c4ccb4067.png)
 
-The data from Webhook is accessible in the `Webhook` class-based view in
-`project/gc_app/views.py` in the `webhook_data` variable.
+Or we can also use Postman to delete a record from our dataset, we need to call our API using DELETE method which I have shown below:
 
-## Tests
+![8](https://user-images.githubusercontent.com/40818500/141837480-74085288-1bf2-4bb2-bd6b-c754d11f982c.png)
 
-To run the tests, `cd` into the directory where `manage.py` is:
-```sh
-(env)$ python manage.py test gc_app
-```
+Thus, after deleting 8th record we have our dataset as follows:
+
+![9](https://user-images.githubusercontent.com/40818500/141838372-e9b6ddce-4b03-4568-ad2e-3d2f6c22e4af.png)
