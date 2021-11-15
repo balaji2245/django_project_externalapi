@@ -1,14 +1,15 @@
-# Python API Development Assignment
+# Python API Development Assignment (Ice and Fire API)
 
 ## Short description
 
-In this coding assignment I have implemented a CRUD (Create, Read, Update, Delete) API with a database deployed in Heroku Postgresql.
-To implement this assignment I have used Django framework and have deployed the API on Heroku cloud hosting provider. I have created a sample dataset for books with name, isbn,  authors, country, number_of_pages, publisher release_date as its attributes.
+In this coding assignment I have implemented a REST API that calls an external API service of Ice and Fire and gets information about the books. 
+
+Mainly there are two kinds of works this REST API call does, 1. Getting the information of all the books available in the Ice and Fire dataset and 2. Getting the information about a particular book provided its name in the url in the format required " .../?name=nameOfBook".
 
 You can access the API using following API call:
 
 ```sh
-https://balajibookmanagementapp.herokuapp.com/api/book/
+https://balajiiceandfireapi.herokuapp.com/
 ```
 
 ## Setup
