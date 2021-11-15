@@ -42,6 +42,12 @@ I have deployed the working API on Heroku, you can see use following website to 
 ```sh
 https://balajibookmanagementapp.herokuapp.com/api/book/
 ```
+The backend dataset which I have used is postgresql deployed on Heroku cloud platform. You can add, read, update or delete any record from the dataset. Below I have given examples for the CRUD operations which you can perform on the dataset.
+
+### Create
+For creating a new Book record, you can either use above mentioned website and add the record as shown in the adjacent screenshot using UI provided or you can as well use an API testing tool like Postman.
+
+![1](https://user-images.githubusercontent.com/40818500/141831935-6280ec51-4bf0-44a5-85b8-a2dd1d71a776.png)
 
 
 
