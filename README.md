@@ -76,6 +76,10 @@ Same thing we can do using Postman or any other API testing tool as well:
 
 ### Update
 
+As shown below, we can update a record by calling the API by "https://balajibookmanagementapp.herokuapp.com/api/book/4/" and using PUT option given at the bottom as follows:
+
+![7_1](https://user-images.githubusercontent.com/40818500/141838896-6b2da5b9-c48b-4685-a7cf-8ba8b5ddb62d.png)
+
 To update a record in our dataset we can call our API using PUT method as shown below, here I have changed the ISBN number of book named "balaji book".
 
 ![7](https://user-images.githubusercontent.com/40818500/141835248-992b75f3-2f47-444a-bd16-7bf98744201e.png)
