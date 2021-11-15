@@ -25,7 +25,7 @@ https://balajiiceandfireapi.herokuapp.com/
 
 The REST API call above calls the Ice and Fire API and showcases the complete book dataset of it as follows:
 
-![1_1](https://user-images.githubusercontent.com/40818500/141843670-7e6f1776-3ce3-415b-818f-77fd749fd09d.png)
+![1_1](https://user-images.githubusercontent.com/40818500/141844144-e6085a0b-6e3b-4f5a-a3c7-df74362689f5.png)
 
 Thus showcasing the whole book dataset with required attributes as requested in the assignment name, isbn, authors, number_of_pages, publisher, country rerlease date.
 Here, in this API, I have worked on removing the unwanted attributes recieved from the Ice and Fire API call which were url, characters, mediaType and povCharacters.
@@ -44,7 +44,7 @@ https://balajiiceandfireapi.herokuapp.com/?xsxs=The%20Princess%20and%20the%20Que
 
 I have attached the screenshot wherein we can see that we have got the information of the particular book in the desired format below:
 
-![1_2](https://user-images.githubusercontent.com/40818500/141843713-8693f085-f932-45fe-8119-45811d172c44.png)
+![1_2](https://user-images.githubusercontent.com/40818500/141844174-5d52e421-5d4a-4c4e-86e7-8c4cd5d6db4a.png)
 
 
 ## Setup
