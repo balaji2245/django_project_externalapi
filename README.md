@@ -61,13 +61,18 @@ For reading the book dataset which I have uploaded on Heroku postgresql cloud se
 
 Or you can use Postman as shown below to read the books dataset:
 
+![4](https://user-images.githubusercontent.com/40818500/141834742-7700e1ba-d0f0-4734-be82-95decea76d68.png)
 
 You can also fetch a particular book info with by providing the book id as below:
+
 ![6](https://user-images.githubusercontent.com/40818500/141834168-d500501f-f0d9-46a3-9651-e645a03af94d.png)
 
 Same thing we can do using Postman or any other API testing tool as well:
+
 ![5](https://user-images.githubusercontent.com/40818500/141833854-75abf427-1d09-446e-8aad-654d1156483b.png)
 
+
+### Update
 
 
 
