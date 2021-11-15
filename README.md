@@ -10,7 +10,7 @@ To implement this assignment I have used Django framework and have deployed the 
 The first thing to do is to clone the repository:
 
 ```sh
-$ git clone https://github.com/gocardless/sample-django-app.git
+$ git clone https://github.com/balaji2245/django_project_externalapi.git
 $ cd sample-django-app
 ```
 
