@@ -67,7 +67,7 @@ Or you can use Postman as shown below to read the books dataset:
 
 You can also fetch a particular book info with by providing the book id as below:
 
-![6](https://user-images.githubusercontent.com/40818500/141834168-d500501f-f0d9-46a3-9651-e645a03af94d.png)
+![6](https://user-images.githubusercontent.com/40818500/141839409-35de71c6-cb3f-4fb5-a4df-9b5c9b4830d3.png)
 
 Same thing we can do using Postman or any other API testing tool as well:
 
