@@ -1,15 +1,18 @@
-# Python API Development Assignment
+# Python API Development Assignment (Ice and Fire API)
 
 ## Short description
 
-In this coding assignment I have implemented a CRUD (Create, Read, Update, Delete) API with a database deployed in Heroku Postgresql.
-To implement this assignment I have used Django framework and have deployed the API on Heroku cloud hosting provider. I have created a sample dataset for books with name, isbn,  authors, country, number_of_pages, publisher release_date as its attributes.
+In this coding assignment I have implemented a REST API that calls an external API service of Ice and Fire and gets information about the books. 
+
+Mainly there are two kinds of works this REST API call does, 1. Getting the information of all the books available in the Ice and Fire dataset and 2. Getting the information about a particular book provided its name in the url in the format required " .../?name=nameOfBook".
 
 You can access the API using following API call:
 
 ```sh
-https://balajibookmanagementapp.herokuapp.com/api/book/
+https://balajiiceandfireapi.herokuapp.com/
 ```
+
+
 
 ## Walkthrough
 
@@ -79,6 +82,7 @@ Thus, after deleting 8th record we have our dataset as follows:
 
 ![9](https://user-images.githubusercontent.com/40818500/141839766-6a0480d4-a0da-4274-b6b8-5ee4a6c8fb81.png)
 
+
 ## Setup
 
 The first thing to do is to clone the repository:
@@ -108,4 +112,5 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 And navigate to `http://127.0.0.1:8000/balaji2245/`.
+
 
