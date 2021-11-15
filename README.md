@@ -101,4 +101,5 @@ Or we can also use Postman to delete a record from our dataset, we need to call 
 
 Thus, after deleting 8th record we have our dataset as follows:
 
-![9](https://user-images.githubusercontent.com/40818500/141838372-e9b6ddce-4b03-4568-ad2e-3d2f6c22e4af.png)
+![9](https://user-images.githubusercontent.com/40818500/141839584-6c813848-14fc-44a6-8b48-7fedbfff6aee.png)
+
