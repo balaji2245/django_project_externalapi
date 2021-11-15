@@ -49,6 +49,11 @@ For creating a new Book record, you can either use above mentioned website and a
 
 ![1](https://user-images.githubusercontent.com/40818500/141831935-6280ec51-4bf0-44a5-85b8-a2dd1d71a776.png)
 
+Or you can use Postman as shown below to create a new book record:
+
+![2](https://user-images.githubusercontent.com/40818500/141832711-92423c3e-96b5-46db-a70c-cade76eb10bf.png)
+
+
 
 
 Before you interact with the application, go to GoCardless Sandbox and set up
