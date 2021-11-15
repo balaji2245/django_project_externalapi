@@ -10,10 +10,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+import django_heroku
+
 from pathlib import Path
 
-import django_heroku
+# SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+
+
+print("im in settings=============================================================================")
 
 
 
@@ -31,6 +35,7 @@ SECRET_KEY = 'django-insecure-=9x388zxl3h5a@9599i&gavvfz@fgd+g56*d&2%wnm@nb$3em-
 DEBUG = True
 
 ALLOWED_HOSTS = ['iceandfireapi.herokuapp.com']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -57,14 +62,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'externalapiproject.urls'
-print(os.path.join(SETTINGS_PATH, 'templates'))
-print("++++++++++++++++++++++")
+# print(os.path.join(SETTINGS_PATH, 'templates'))
+# print("++++++++++++++++++++++")
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         
-        'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
+        # 'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -85,8 +91,12 @@ WSGI_APPLICATION = 'externalapiproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd7gd2472l8f28r',
+        'USER': 'scqmagwzpgmmub',
+        'PASSWORD': '6992e89a514c6899930ee643c07021b6996b704e9fae06fdf9119ea838d25a2e',
+        'HOST': 'ec2-52-201-195-11.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
