@@ -54,6 +54,23 @@ Or you can use Postman as shown below to create a new book record:
 ![2](https://user-images.githubusercontent.com/40818500/141832711-92423c3e-96b5-46db-a70c-cade76eb10bf.png)
 
 
+### Read
+For reading the book dataset which I have uploaded on Heroku postgresql cloud services, we can hit the API using above given link and can get the response in JSon as shown below:
+
+![3](https://user-images.githubusercontent.com/40818500/141833122-ac98973c-5993-40af-a757-a84f4b18fa2d.png)
+
+Or you can use Postman as shown below to read the books dataset:
+
+
+You can also fetch a particular book info with by providing the book id as below:
+![6](https://user-images.githubusercontent.com/40818500/141834168-d500501f-f0d9-46a3-9651-e645a03af94d.png)
+
+Same thing we can do using Postman or any other API testing tool as well:
+![5](https://user-images.githubusercontent.com/40818500/141833854-75abf427-1d09-446e-8aad-654d1156483b.png)
+
+
+
+
 
 
 Before you interact with the application, go to GoCardless Sandbox and set up
