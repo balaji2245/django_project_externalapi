@@ -38,6 +38,13 @@ And navigate to `http://127.0.0.1:8000/balaji2245/`.
 
 ## Walkthrough
 
+I have deployed the working API on Heroku, you can see use following website to look at its woking:
+```sh
+https://balajibookmanagementapp.herokuapp.com/api/book/
+```
+
+
+
 Before you interact with the application, go to GoCardless Sandbox and set up
 the Redirect URI in the Developer settings. To make it work with this
 application, use the value `http://127.0.0.1:8000/gocardless/confirm/`. This is to
