@@ -5,6 +5,12 @@
 In this coding assignment I have implemented a CRUD (Create, Read, Update, Delete) API with a database deployed in Heroku Postgresql.
 To implement this assignment I have used Django framework and have deployed the API on Heroku cloud hosting provider. I have created a sample dataset for books with name, isbn,  authors, country, number_of_pages, publisher release_date as its attributes.
 
+You can access the API using following API call:
+
+```sh
+https://balajibookmanagementapp.herokuapp.com/api/book/
+```
+
 ## Setup
 
 The first thing to do is to clone the repository:
@@ -43,6 +49,7 @@ I have deployed the working API on Heroku, you can see use following website to 
 ```sh
 https://balajibookmanagementapp.herokuapp.com/api/book/
 ```
+
 The backend dataset which I have used is postgresql deployed on Heroku cloud platform. You can add, read, update or delete any record from the dataset. Below I have given examples for the CRUD operations which you can perform on the dataset.
 
 
