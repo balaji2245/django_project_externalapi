@@ -41,7 +41,7 @@ And navigate to `http://127.0.0.1:8000/balaji2245/`.
 I have deployed the working API on Heroku, you can see use following website to look at its woking:
 
 ```sh
-## https://balajibookmanagementapp.herokuapp.com/api/book/
+https://balajibookmanagementapp.herokuapp.com/api/book/
 ```
 The backend dataset which I have used is postgresql deployed on Heroku cloud platform. You can add, read, update or delete any record from the dataset. Below I have given examples for the CRUD operations which you can perform on the dataset.
 
