@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn iceandfire.wsgi --log-file=-
+web: gunicorn iceandfireapi.wsgi --log-file=-
