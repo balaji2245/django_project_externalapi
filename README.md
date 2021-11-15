@@ -19,7 +19,7 @@ https://balajiiceandfireapi.herokuapp.com/
 I have deployed the working API on Heroku, you can see use following website to look at its woking:
 
 ```sh
-https://balajibookmanagementapp.herokuapp.com/api/book/
+https://balajiiceandfireapi.herokuapp.com/
 ```
 
 The backend dataset which I have used is postgresql deployed on Heroku cloud platform. You can add, read, update or delete any record from the dataset. Below I have given examples for the CRUD operations which you can perform on the dataset.
